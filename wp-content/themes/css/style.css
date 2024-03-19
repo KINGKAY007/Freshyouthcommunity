@@ -782,10 +782,109 @@ body .container-wrap [class*="wp-block"].alignwide img {
   max-width: none;
   width: 100%;
 }
+/* button a entre exp*/
+
+.button {
+  position: relative;
+  border: none;
+  background: transparent;
+  --stroke-color: #ffffff7c;
+  --ani-color: rgba(95, 3, 244, 0);
+  --color-gar: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  letter-spacing: 3px;
+  font-size: 2em;
+  font-family: "Arial";
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--stroke-color);
+  cursor: pointer;
+}
+
+.front-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  background: var(--color-gar);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200%;
+  overflow: hidden;
+  transition: all 1s;
+  animation: 8s ani infinite;
+  border-bottom: 2px solid transparent;
+}
+
+.button:hover .front-text {
+  width: 100%;
+  border-bottom: 2px solid #03a9f4;
+  -webkit-text-stroke: 1px var(--ani-color);
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 400%;
+  }
+
+  100% {
+    background-position: 0%;
+  }
+}
 
 
 
-/* gutenberg default blocks */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* button a entre exp */
 blockquote.wp-block-quote {
   position: relative;
   padding-left: 1.3em;
@@ -1286,9 +1385,180 @@ body[data-ajax-transitions="true"] #ajax-loading-screen[data-effect="center_mask
 
 
 
-/*-------------------------------------------------------------------------*/
-/* 4. Page Templates
-/*-------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+ 
+}
+
+.up {
+  
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.facebook {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #03A9F4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.whatsapp {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+  fill: #00ff00;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+
+.gmail {
+  margin-top: -.9em;
+  margin-left: -1.2em;
+  fill: #f14336;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #1877f2;
+}
+
+.card2:hover .facebook {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #00ff00;
+}
+
+.card3:hover .whatsapp {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #FF0004;
+}
+
+.card4:hover .gmail {
+  fill: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #error-404{
   text-align:center;
