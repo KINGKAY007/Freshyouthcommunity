@@ -1485,7 +1485,7 @@ body[data-ajax-transitions="true"] #ajax-loading-screen[data-effect="center_mask
 .gmail {
   margin-top: -.9em;
   margin-left: -1.2em;
-  fill: #f14336;
+  fill: #ffffff;
 }
 
 .card1:hover {
@@ -1495,7 +1495,7 @@ body[data-ajax-transitions="true"] #ajax-loading-screen[data-effect="center_mask
 }
 
 .card1:hover .instagram {
-  fill: white;
+  fill: rgb(4, 50, 148);
 }
 
 .card2:hover {
@@ -1517,11 +1517,11 @@ body[data-ajax-transitions="true"] #ajax-loading-screen[data-effect="center_mask
 .card3:hover .whatsapp {
   fill: white;
 }
-
+  
 .card4:hover {
   cursor: pointer;
   scale: 1.1;
-  background-color: #FF0004;
+  background-color: #001dd9;
 }
 
 .card4:hover .gmail {
