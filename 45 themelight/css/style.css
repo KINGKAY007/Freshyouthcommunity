@@ -342,7 +342,7 @@ header .navbar {
   margin-top: 40px;
 }
 #counter {
-  background: url(../img/counter-bg.jpg) no-repeat;
+  background-color: #000;
   background-size: cover;
   background-position: center;
   position: relative;
